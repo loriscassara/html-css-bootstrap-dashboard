@@ -1,0 +1,23 @@
+/***************
+    common UI elements
+***************/
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.my-bgcolor-darkblue { background-color: #051E34; }
+.my-bgcolor-blue { background-color: #165BBA; }
+.my-bgcolor-skyblue { background-color: #1B72E8; }
+.my-bgcolor-gray { background-color: #F8F9FA; }
+.my-bgcolor-green { background-color: #198754; }
+.my-bgcolor-yellow { background-color: #FFC107; }
+.my-bgcolor-red { background-color: #DC3545; }
+
+.my-color-darkgray { color: #5B5858; }
+.my-color-gray { color: #6C757D; }
+.my-color-yellow { color: #FF8F00; }
+
+/***************
+    header elements
+***************/
