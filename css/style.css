@@ -18,6 +18,53 @@
 .my-color-gray { color: #6C757D; }
 .my-color-yellow { color: #FF8F00; }
 
+:root {
+    --slidebar-width: 12rem;
+    --slidebar-width-resp: 3rem;
+}
+
 /***************
-    header elements
+    nav elements
 ***************/
+
+.navbar { flex-wrap: nowrap; }
+
+.input-group { width: 80%; }
+
+.input-group-text:hover {
+    cursor: pointer;
+    background-color: #d9dcdf;
+}
+
+#menu-link {
+    cursor: pointer;
+    transition: all .55s ease;
+}
+
+#menu-link:hover { scale: 1.3; }
+
+#help-link {
+    cursor: pointer;
+    transition: all .55s ease;
+}
+
+#help-link:hover { scale: 1.3; }
+
+#dots-link {
+    cursor: pointer;
+    transition: all .55s ease;
+}
+
+#dots-link:hover { scale: 1.3; }
+
+#bell-link {
+    cursor: pointer;
+    transition: all .55s ease;
+}
+
+#bell-link:hover { scale: 1.3; }
+
+/***************
+    slidebar elements
+***************/
+
