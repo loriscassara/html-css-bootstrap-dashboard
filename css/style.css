@@ -13,27 +13,53 @@
 .my-bgcolor-green { background-color: #198754; }
 .my-bgcolor-yellow { background-color: #FFC107; }
 .my-bgcolor-red { background-color: #DC3545; }
+.my-bgcolor-white { background-color: #FFFFFF; }
 
 .my-color-darkgray { color: #5B5858; }
 .my-color-gray { color: #6C757D; }
 .my-color-yellow { color: #FF8F00; }
 
+.my-button {
+    background-color: #165BBA;
+    height: 2rem;
+    color: white;
+    font-size: small;
+    border-radius: 20px;
+}
+
+.my-button:hover {
+    background-color: #124a99;
+}
+
 :root {
-    --slidebar-width: 12rem;
+    --slidebar-width: 8rem;
     --slidebar-width-resp: 3rem;
 }
+
+.offcanvas { --bs-offcanvas-width: 575px; }
 
 /***************
     nav elements
 ***************/
 
-.navbar { flex-wrap: nowrap; }
+.navbar {
+    flex-wrap: nowrap;
+    height: 8vh;
+}
+
+.mobile-logo {
+    max-width: 35px;
+}
+
+.mobile-logo:hover {
+    cursor: pointer;
+}
 
 .input-group { width: 80%; }
 
 .input-group-text:hover {
     cursor: pointer;
-    background-color: #d9dcdf;
+    background-color: #D9DCDF;
 }
 
 #menu-link {
@@ -68,3 +94,51 @@
     slidebar elements
 ***************/
 
+.slidebar {
+    background-color: #051E34;
+    background-image: url(../img/sidebar-bg.png);
+    height: 92vh;
+    width: var(--slidebar-width);
+    position: relative;
+}
+
+#home-hover:hover {
+    cursor: pointer;
+    border-left: solid 2px #F8F9FA;
+}
+
+#stats-hover:hover {
+    cursor: pointer;
+    border-left: solid 2px #F8F9FA;
+}
+
+#signal-hover:hover {
+    cursor: pointer;
+    border-left: solid 2px #F8F9FA;
+}
+
+#cog-hover:hover {
+    cursor: pointer;
+    border-left: solid 2px #F8F9FA;
+}
+
+/***************
+    dashboard elements
+***************/
+
+.info-container {
+    background-color: #1B72E8;
+    height: auto;
+}
+
+.my-button-plus {
+    height: 2rem;
+    color: white;
+    font-size: small;
+    border-radius: 20px;
+}
+
+.my-button-plus:hover {
+    background-color: #124a99;
+    color: white;
+}

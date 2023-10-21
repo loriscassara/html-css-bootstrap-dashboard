@@ -30,6 +30,7 @@
             add custom link css
         -->
 
+        <link rel="stylesheet" href="./css/resp.css">
         <link rel="stylesheet" href="./css/style.css">
     
     </head>
@@ -40,9 +41,10 @@
         -->
 
         <nav class="navbar my-bgcolor-gray">
-            <div class="container-fluid d-flex">
+            <div class="container-fluid d-flex my-bgcolor-white rounded">
                 <a class="navbar-brand" href="#">
-                    <img class="w-100 rounded-start" src="./img/logo.svg" alt="Boolean Logo">
+                    <img class="w-100 rounded-start d-md-block d-none" id="logo" src="./img/logo.svg" alt="Boolean Logo">
+                    <img class="mobile-logo d-md-none" src="./img/mobile-logo.png" alt="Boolean Logo">
                 </a>
                 <div class="input-group">
                     <span class="input-group-text" id="basic-addon1">
@@ -51,13 +53,213 @@
                     <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
                 <div class="icon-container d-flex">
-                    <i class="bx bx-menu my-color-darkgray px-2" id="menu-link"></i>
-                    <i class="bx bxs-help-circle my-color-darkgray px-2" id="help-link"></i>
-                    <i class="bx bx-dots-vertical-rounded my-color-darkgray px-2" id="dots-link"></i>
-                    <i class="bx bxs-bell my-color-yellow px-2" id="bell-link"></i>
+                    <i class="bx bx-menu my-color-darkgray d-md-block d-none px-2" id="menu-link"></i>
+                    <i class="bx bxs-help-circle my-color-darkgray d-md-block d-none px-2" id="help-link"></i>
+                    <i class="bx bx-dots-vertical-rounded my-color-darkgray d-md-block d-none px-2" id="dots-link"></i>
+                    <div class="dropdown">
+                        <i class="bx bxs-bell my-color-yellow" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dots-link"></i>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="#">Profilo</a></li>
+                          <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                      </div>
                 </div>
             </div>
         </nav>
+        
+        <!-- 
+            start-main
+        -->
+
+        <main class="d-flex">
+
+            <!-- 
+                start-slidebar
+            -->
+
+            <div class="slidebar d-flex flex-column justify-content-between text-light">
+                <div class="container-toplink">
+                    <div class="slidebar-link d-flex align-items-center justify-content-center pt-3" id="home-hover">
+                        <i class="bx bxs-home pe-2"></i>
+                        <p class="d-md-block d-none m-0">Home</p>
+                    </div>
+                    <div class="slidebar-link d-flex align-items-center justify-content-center pt-3" id="stats-hover">
+                        <i class="bx bxs-bar-chart-alt-2 pe-2"></i>
+                        <p class="d-md-block d-none m-0">Stats</p>
+                    </div>
+                    <div class="slidebar-link d-flex align-items-center justify-content-center pt-3" id="signal-hover">
+                        <i class="bx bx-signal-5 pe-2"></i>
+                        <p class="d-md-block d-none m-0">Signals</p>
+                    </div>
+                </div>
+                <div class="container-bottomlink">
+                    <div class="slidebar-link d-flex align-items-center justify-content-center pb-3" id="cog-hover">
+                        <i class="bx bxs-cog pe-2"></i>
+                        <p class="d-md-block d-none m-0">Admin</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 
+                start-dashboard
+            -->
+
+            <div class="container-fluid p-0">
+                <div class="info-container d-flex align-items-center justify-content-between py-4">
+                    <div class="plan-container text-light">
+                        <div class="title d-flex align-items-center ps-2">
+                            <h2 class="pe-2">Boolean</h2>
+                            <button class="btn my-button">Piano blaze</button>
+                        </div>
+                        <div class="app d-flex align-items-center ps-2">
+                            <button class="btn my-button me-2">3 app</button>
+                            <i class="bx bx-chevrons-right me-2"></i>
+                            <button class="btn my-button d-md-block d-none me-2">Boolean mobile app</button>
+                            <button class="btn my-button d-md-block d-none me-2">Boolean web app</button>
+                            <button class="btn my-button d-md-block d-none me-2">Boolean blog app</button>
+                            <button class="bx bx-plus btn my-button d-md-none me-2"></button>
+                        </div>
+                    </div>
+                    <div class="user-container text-light">
+                        <p class="m-0">Studenti online negli ultimi 30 minuti</p>
+                        <h3>125</h3>
+                    </div>
+                    <div class="new-container d-flex align-items-center pe-5">
+                        <p class="text-light pe-2 m-0">Nuovo studente</p>
+                        <button class="btn bx bx-plus my-button-plus border border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <form class="row g-3 needs-validation" novalidate>
+                                    <div class="col-12 col-md-6">
+                                        <label for="validationCustom01" class="form-label fw-bold">Nome</label>
+                                        <input type="text" class="form-control" id="validationCustom01" required>
+                                        <div class="valid-feedback">
+                                            Sembra buono!
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="validationCustom02" class="form-label fw-bold">Cognome</label>
+                                        <input type="text" class="form-control" id="validationCustom02" required>
+                                        <div class="valid-feedback">
+                                            Sembra buono!
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="validationCustomUsername" class="form-label fw-bold">Email</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                            <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                            <div class="invalid-feedback">
+                                                Scegli un nome utente valido.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="validationCustom02" class="form-label fw-bold">Password</label>
+                                        <input type="password" class="form-control" id="validationCustom02" required>
+                                        <div class="valid-feedback">
+                                            Sembra buono!
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="validationCustomUsername" class="form-label fw-bold">Indirizzo Email</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                            <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                            <div class="invalid-feedback">
+                                                Scegli un nome utente valido.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="validationCustom02" class="form-label fw-bold">Password</label>
+                                        <input type="password" class="form-control" id="validationCustom02" required>
+                                        <div class="valid-feedback">
+                                            Sembra buono!
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="validationCustom01" class="form-label fw-bold">Indirizzo</label>
+                                        <input type="text" class="form-control" id="validationCustom01" required>
+                                        <div class="valid-feedback">
+                                            Sembra buono!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="validationCustom03" class="form-label fw-bold">Città</label>
+                                        <input type="text" class="form-control" id="validationCustom03" required>
+                                        <div class="invalid-feedback">
+                                            Si prega di fornire una città valida.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="validationCustom04" class="form-label fw-bold">Stato</label>
+                                        <select class="form-select" id="validationCustom04" required>
+                                            <option selected disabled value="">Scegli...</option>
+                                            <option>Italia</option>
+                                            <option>Albania</option>
+                                            <option>Canada</option>
+                                            <option>Cina</option>
+                                            <option>Francia</option>
+                                            <option>India</option>
+                                            <option>Portogallo</option>
+                                            <option>Svizzera</option>
+                                            <option>Turchia</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Seleziona uno stato valido.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="validationCustom05" class="form-label fw-bold">CAP</label>
+                                        <input type="text" class="form-control" id="validationCustom05" required>
+                                        <div class="invalid-feedback">
+                                            Si prega di fornire un codice postale valido.
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="validationCustomUsername" class="form-label fw-bold">Foto</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend">Scegli file</span>
+                                            <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" value="Nessun file selezionato" required>
+                                            <div class="invalid-feedback">
+                                                Scegli un nome utente valido.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                            <label class="form-check-label" for="invalidCheck">
+                                                Selziona per prosegurie
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                È necessario accettare prima di inviare.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                      <button class="btn btn-primary" type="submit">Salva</button>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <button class="btn btn-warning" type="submit">Svuota</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            
+            </div>
+
+        </main>
     
         <!-- add bootstrap.js -->
 

@@ -1,0 +1,29 @@
+/***************
+    resp nav elements
+***************/
+
+@media screen and (max-width: 767px) {
+
+    .slidebar {
+        max-width: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .info-container {
+        flex-wrap: wrap;
+    }
+
+    .user-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 8px;
+    }
+
+    .new-container {
+        padding-left: 8px;
+    }
+
+}
