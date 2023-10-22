@@ -57,7 +57,7 @@
                     <i class="bx bxs-help-circle my-color-darkgray d-md-block d-none px-2" id="help-link"></i>
                     <i class="bx bx-dots-vertical-rounded my-color-darkgray d-md-block d-none px-2" id="dots-link"></i>
                     <div class="dropdown">
-                        <i class="bx bxs-bell my-color-yellow" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dots-link"></i>
+                        <i class="bx bxs-bell my-color-yellow ps-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dots-link"></i>
                         <ul class="dropdown-menu dropdown-menu-end">
                           <li><a class="dropdown-item" href="#">Profilo</a></li>
                           <li><a class="dropdown-item" href="#">Fatturazione</a></li>
@@ -255,12 +255,272 @@
                     </div>
                 </div>
             
-            
-            
-            </div>
+            <!-- 
+                dashboard-container
+            -->
 
+            <div class="dashboard-container overflow-auto">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <div class="title my-bgcolor-gray border rounded mt-3">
+                                <h4 class="py-2 ps-2 m-0">Prossime classi</h4>
+                            </div>
+                            <div class="border rounded">
+                            <div class="row pt-3 pb-2 ms-2 me-2 p-0 border-bottom">
+                                <div class="col-4">
+                                    <p class="fw-bold">Nome</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="fw-bold">Data inizio</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="fw-bold">ROI</p>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <p class="fw-bold">Stato</p>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <p class="fw-bold">Azioni</p>
+                                </div>
+                            </div>
+                            <div class="row pt-3 pb-2 ms-2 me-2 p-0 border-bottom">
+                                <div class="col-4 d-flex align-items-center">
+                                    <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+                                    <p class="class m-0 ps-2">Classe 75</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">15 Feb 2021</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">20%</p>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <button class="btn btn-success btn-sm">Done</button>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <i class="pencil bx bxs-pencil border rounded my-color-darkgray p-1"></i>
+                                    <i class="trash bx bxs-trash border rounded my-color-darkgray p-1"></i>
+                                </div>                      
+                            </div>
+                            <div class="row pt-3 pb-2 ms-2 me-2 p-0 border-bottom">
+                                <div class="col-4 d-flex align-items-center">
+                                    <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+                                    <p class="class m-0 ps-2">Classe 76</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">16 Feb 2021</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">20%</p>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <button class="btn btn-success btn-sm">Done</button>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <i class="pencil bx bxs-pencil border rounded my-color-darkgray p-1"></i>
+                                    <i class="trash bx bxs-trash border rounded my-color-darkgray p-1"></i>
+                                </div>                      
+                            </div>
+                            <div class="row pt-3 pb-2 ms-2 me-2 p-0 border-bottom">
+                                <div class="col-4 d-flex align-items-center">
+                                    <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+                                    <p class="class m-0 ps-2">Classe 77</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">17 Feb 2021</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">20%</p>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <button class="btn btn-warning text-light btn-sm">Process</button>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <i class="pencil bx bxs-pencil border rounded my-color-darkgray p-1"></i>
+                                    <i class="trash bx bxs-trash border rounded my-color-darkgray p-1"></i>
+                                </div>                      
+                            </div>
+                            <div class="row pt-3 pb-2 ms-2 me-2 p-0 border-bottom">
+                                <div class="col-4 d-flex align-items-center">
+                                    <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+                                    <p class="class m-0 ps-2">Classe 78</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">18 Feb 2021</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">20%</p>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <button class="btn btn-success btn-sm">Done</button>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <i class="pencil bx bxs-pencil border rounded my-color-darkgray p-1"></i>
+                                    <i class="trash bx bxs-trash border rounded my-color-darkgray p-1"></i>
+                                </div>                      
+                            </div>
+                            <div class="row pt-3 pb-2 ms-2 me-2 p-0 border-bottom">
+                                <div class="col-4 d-flex align-items-center">
+                                    <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+                                    <p class="class m-0 ps-2">Classe 79</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">19 Feb 2021</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">20%</p>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <button class="btn btn-danger btn-sm">Falled</button>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <i class="pencil bx bxs-pencil border rounded my-color-darkgray p-1"></i>
+                                    <i class="trash bx bxs-trash border rounded my-color-darkgray p-1"></i>
+                                </div>                      
+                            </div>
+                            <div class="row pt-3 pb-2 ms-2 me-2 p-0 border-bottom">
+                                <div class="col-4 d-flex align-items-center">
+                                    <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+                                    <p class="class m-0 ps-2">Classe 80</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">20 Feb 2021</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">20%</p>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <button class="btn btn-success btn-sm">Done</button>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <i class="pencil bx bxs-pencil border rounded my-color-darkgray p-1"></i>
+                                    <i class="trash bx bxs-trash border rounded my-color-darkgray p-1"></i>
+                                </div>                      
+                            </div>
+                            <div class="row pt-3 pb-2 ms-2 me-2 p-0 border-bottom">
+                                <div class="col-4 d-flex align-items-center">
+                                    <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+                                    <p class="class m-0 ps-2">Classe 81</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">21 Feb 2021</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">20%</p>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <button class="btn btn-danger btn-sm">Falled</button>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <i class="pencil bx bxs-pencil border rounded my-color-darkgray p-1"></i>
+                                    <i class="trash bx bxs-trash border rounded my-color-darkgray p-1"></i>
+                                </div>                      
+                            </div>
+                            <div class="row pt-3 pb-2 ms-2 me-2 p-0">
+                                <div class="col-4 d-flex align-items-center">
+                                    <img class="avatar" src="./img/class-avatar.jpg" alt="class-avatar">
+                                    <p class="class m-0 ps-2">Classe 82</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">22 Feb 2021</p>
+                                </div>
+                                <div class="col-2 d-md-block d-none text-center">
+                                    <p class="">20%</p>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <button class="btn btn-success btn-sm">Done</button>
+                                </div>
+                                <div class="col-4 col-md-2 text-center">
+                                    <i class="pencil bx bxs-pencil border rounded my-color-darkgray p-1"></i>
+                                    <i class="trash bx bxs-trash border rounded my-color-darkgray p-1"></i>
+                                </div>                      
+                            </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="title my-bgcolor-gray border rounded mt-3">
+                                    <h4 class="py-2 ps-2 m-0">F.A.Q.</h4>
+                                </div>
+                                <div class="border rounded">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                          Come aggiungere un nuovo studente?
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Clicca sul + in alto nella sezione blu.</div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                          Come posso accedere alle informazioni del mio account?
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Clicca sull'icona della campanella.</div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                          Posso usare questa dashboard da mobile?S
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Si, puoi usare questa app da mobile.</div>
+                                      </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="title my-bgcolor-gray border rounded mt-3">
+                                <h4 class="py-2 ps-2 m-0">Todo</h4>
+                            </div>
+                            <div class="border rounded">
+                            <div class="form-check pt-2 ms-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                Kickoff nuove classi
+                                </label>
+                            </div>
+                            <hr>
+                            <div class="form-check ms-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                Lezione su Bootstrap 5 in classe #75
+                                </label>
+                            </div>
+                            <hr>
+                            <div class="form-check pb-2 ms-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                Controllare username github studenti
+                                </label>
+                            </div>
+                            </div>
+                            <div class="border rounded mt-4 pb-2">
+                                <img class="w-100" src="./img/stats.jpeg" alt="stats">
+                                <h5 class="ps-2">Utenti attivi</h5>
+                                <p class="class ps-2">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                <hr>
+                                <p class="class ps-2">Gennaio: 1200</p>
+                                <hr>
+                                <p class="class ps-2">Febbraio: 800</p>
+                                <hr>
+                                <p class="class ps-2">Marzo: 1500</p>
+                                <hr>
+                                <a class="ps-2 pb-2" href="#">Visualizza report approfondito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
-    
         <!-- add bootstrap.js -->
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

@@ -97,9 +97,8 @@
 .slidebar {
     background-color: #051E34;
     background-image: url(../img/sidebar-bg.png);
-    height: 92vh;
+    min-height: 92vh;
     width: var(--slidebar-width);
-    position: relative;
 }
 
 #home-hover:hover {
@@ -141,4 +140,35 @@
 .my-button-plus:hover {
     background-color: #124a99;
     color: white;
+}
+
+.dev-image {
+    border-radius: 50%;
+    max-width: 40px;
+}
+
+.dashboard-container {
+    height: 75vh;
+    max-width: 92vw;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 2rem;
+}
+
+.pencil:hover {
+    cursor: pointer;
+    background-color: #FFC107;
+    color: white;
+}
+
+.trash:hover {
+    cursor: pointer;
+    background-color: #DC3545;
+    color: white;
+}
+
+.class {
+    font-size: small;
 }

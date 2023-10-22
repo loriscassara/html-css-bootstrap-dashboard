@@ -26,4 +26,8 @@
         padding-left: 8px;
     }
 
+    .slidebar {
+        height: auto;
+    }
+
 }
